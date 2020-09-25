@@ -14,12 +14,12 @@ public class SgInquiryManager {
     private @Autowired
     SgInquiryRepository sgInquiryRepository;
 
-    public List<SgInquiry> findAll() {
-        return sgInquiryRepository.findAll();
+    public List<SgInquiry> findAllInquiriesOrderByStatusAsc() {
+        return sgInquiryRepository.findAllByOrderByStatusAsc();
     }
 
-    public SgInquiry findByStatus(String status) {
-        return sgInquiryRepository.findByStatus(status);
+    public List<SgInquiry> findAllInquiriesByStatusOrderByTimeAsc(String status) {
+        return sgInquiryRepository.findAllByStatusOrderByTimeAsc(status);
     }
 
     public SgInquiry findByEmail(String email) {
@@ -30,8 +30,8 @@ public class SgInquiryManager {
         sgInquiryRepository.delete(sgResponse);
     }
 
-    public void save(SgInquiry sgResponse) {
-        sgInquiryRepository.save(sgResponse);
+    public SgInquiry save(SgInquiry sgResponse) {
+        return sgInquiryRepository.save(sgResponse);
     }
 
 }

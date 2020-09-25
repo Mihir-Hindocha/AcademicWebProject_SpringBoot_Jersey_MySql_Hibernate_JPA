@@ -5,7 +5,6 @@ import lombok.Data;
 
 import java.sql.Date;
 import java.sql.Timestamp;
-import java.util.List;
 
 @Data
 public class SgInquiryDto {
@@ -19,6 +18,6 @@ public class SgInquiryDto {
     private String question;
     private Date dob;
     private Timestamp time;
-    private List<SgInquiryDto> sgInquiryDto;
+//    private List<SgInquiryDto> sgInquiryDto;
 
 }
