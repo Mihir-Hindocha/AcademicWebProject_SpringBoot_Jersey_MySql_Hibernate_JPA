@@ -1,13 +1,12 @@
 package application.repository;
 
-import org.springframework.data.jpa.repository.JpaRepository;
-
 import application.model.SgInquiry;
+import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface SgInquiryRepository extends JpaRepository<SgInquiry, String> {
 
-	SgInquiry findByStatus(String status);
+    SgInquiry findByStatus(String status);
 
-	SgInquiry findByEmail(String email);
+    SgInquiry findByEmail(String email);
 
 }
