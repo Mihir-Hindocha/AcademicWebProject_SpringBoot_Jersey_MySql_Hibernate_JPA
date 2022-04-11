@@ -11,6 +11,7 @@ import java.util.List;
 @Component
 @Service
 public class SgInquiryManager {
+
     private @Autowired
     SgInquiryRepository sgInquiryRepository;
 
@@ -33,5 +34,4 @@ public class SgInquiryManager {
     public void save(SgInquiry sgResponse) {
         sgInquiryRepository.save(sgResponse);
     }
-
 }

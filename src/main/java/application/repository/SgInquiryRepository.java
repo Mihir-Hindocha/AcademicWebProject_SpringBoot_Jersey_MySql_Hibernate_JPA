@@ -8,5 +8,4 @@ public interface SgInquiryRepository extends JpaRepository<SgInquiry, String> {
     SgInquiry findByStatus(String status);
 
     SgInquiry findByEmail(String email);
-
 }

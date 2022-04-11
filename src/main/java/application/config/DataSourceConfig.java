@@ -23,7 +23,7 @@ public class DataSourceConfig {
 
     public DriverManagerDataSource createDataSourceNonPooled() {
         DriverManagerDataSource mySqlDataSource = new DriverManagerDataSource();
-        mySqlDataSource.setDriverClassName("com.mysql.jdbc.Driver");
+        mySqlDataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
         mySqlDataSource
                 .setUrl("jdbc:mysql://localhost:3306/shubhmangalgreens");
         mySqlDataSource.setUsername("root");

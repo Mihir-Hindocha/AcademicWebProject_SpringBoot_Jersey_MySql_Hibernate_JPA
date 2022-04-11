@@ -42,5 +42,4 @@ public class SgInquiry {
     // Timestamp of Inquiry
     @Column(name = "time")
     private Timestamp time;
-
 }

@@ -17,6 +17,7 @@ public class SgInquiryService {
 
     private @Autowired
     SgInquiryHelper sgResponseHelper;
+
     private @Autowired
     SgInquiryManager sgResponseManager;
 
@@ -28,5 +29,4 @@ public class SgInquiryService {
 
         return sgTotalInquiriesDto;
     }
-
 }

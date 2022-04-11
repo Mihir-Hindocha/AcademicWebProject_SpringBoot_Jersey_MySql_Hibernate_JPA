@@ -1,6 +1,5 @@
 package application.response;
 
-
 import lombok.Data;
 
 import java.sql.Date;
@@ -20,5 +19,4 @@ public class SgInquiryDto {
     private Date dob;
     private Timestamp time;
     private List<SgInquiryDto> sgInquiryDto;
-
 }

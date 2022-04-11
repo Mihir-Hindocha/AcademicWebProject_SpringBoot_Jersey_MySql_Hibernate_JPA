@@ -25,6 +25,4 @@ public class SgInquiryEndpoint {
         SgInquiryDto sgTotalInquiriesDto = sgResponseService.getTotalInquiries();
         return Response.ok(sgTotalInquiriesDto).build();
     }
-
-
 }

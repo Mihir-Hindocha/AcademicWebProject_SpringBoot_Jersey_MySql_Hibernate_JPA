@@ -1,6 +1,5 @@
 package application.helper;
 
-
 import application.model.SgInquiry;
 import application.response.SgInquiryDto;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,5 +28,4 @@ public class SgInquiryHelper {
 
         return sgInquiryDto;
     }
-
 }
