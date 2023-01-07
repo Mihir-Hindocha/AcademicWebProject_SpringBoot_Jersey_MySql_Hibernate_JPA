@@ -2,16 +2,10 @@ package application.helper;
 
 import application.model.SgInquiry;
 import application.response.SgInquiryDto;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-
-import javax.servlet.ServletContext;
 
 @Component
 public class SgInquiryHelper {
-
-    @Autowired
-    ServletContext context;
 
     public SgInquiryDto buildInquiryCollection(SgInquiry sgInquiry) {
         SgInquiryDto sgInquiryDto = new SgInquiryDto();

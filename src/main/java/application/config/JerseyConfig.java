@@ -1,13 +1,12 @@
 package application.config;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import jakarta.ws.rs.ApplicationPath;
+import jakarta.ws.rs.ext.ContextResolver;
+import jakarta.ws.rs.ext.Provider;
 import org.glassfish.jersey.server.ResourceConfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-
-import javax.ws.rs.ApplicationPath;
-import javax.ws.rs.ext.ContextResolver;
-import javax.ws.rs.ext.Provider;
 
 @Component
 @ApplicationPath("/shubhmangalgreens")
