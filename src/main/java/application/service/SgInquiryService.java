@@ -9,7 +9,6 @@ import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
 @Component
 @Service
@@ -25,7 +24,7 @@ public class SgInquiryService {
         List<SgInquiry> sgTotalInquiries = sgResponseManager.findAll();
         SgInquiryDto sgTotalInquiriesDto = new SgInquiryDto();
         sgTotalInquiriesDto.setSgInquiryDto(
-                sgTotalInquiries.stream().map(sGResponse -> sgResponseHelper.buildInquiryCollection(sGResponse)).collect(Collectors.toList()));
+                sgTotalInquiries.stream().map(sGResponse -> sgResponseHelper.buildInquiryCollection(sGResponse)).toList());
 
         return sgTotalInquiriesDto;
     }
