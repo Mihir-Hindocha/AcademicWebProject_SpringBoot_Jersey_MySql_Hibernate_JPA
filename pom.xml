@@ -10,7 +10,7 @@
     <properties>
         <java.version>17</java.version>
         <jackson-databind.version>2.18.9</jackson-databind.version>
-        <c3p0.version>0.12.0</c3p0.version>
+        <c3p0.version>0.14.0</c3p0.version>
         <lombok.version>1.18.24</lombok.version>
     </properties>
     <parent>
